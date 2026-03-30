@@ -43,11 +43,14 @@ Mewchi is a terminal-based utility designed to standardize and enhance engineeri
      sudo ln -s $(pwd)/mewchi_cli.py /usr/local/bin/mewchi
      ```
 
-4. Add your Groq API key to your shell configuration file (`~/.bashrc` or `~/.zshrc`):
+4. Add your Groq API key to your shell configuration file (`~/.bashrc` or `~/.zshrc` or `~/.config/fish/fish.conf`):
    ```bash
    export GROQ_API_KEY='your_api_key_here'
    ```
-
+   (fish shell)
+   ```sh
+   set -gx GROQ_API_KEY 'your_api_key_here'
+   ```
 5. Refresh your shell environment:
    ```bash
    source ~/.bashrc
