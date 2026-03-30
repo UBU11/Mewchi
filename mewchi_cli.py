@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import os
 import time
+import sys
 import subprocess
 from rich.console import Console
 from rich.panel import Panel
@@ -9,6 +12,9 @@ from rich.live import Live
 from rich.markdown import Markdown
 from prompt_toolkit import PromptSession
 from prompt_toolkit.styles import Style as PromptStyle
+
+script_dir = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(script_dir)
 
 from enhancer import get_enhanced_prompt
 
